@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>متجر الكتاب الإلكتروني</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.9);
+            margin-bottom: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .hero h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero p {
+            color: #34495e;
+            font-size: 1.2em;
+        }
+
+        .ebook-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .ebook-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .ebook-cover {
+            max-width: 300px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .ebook-cover:hover {
+            transform: scale(1.02);
+        }
+
+        .price {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 20px 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .description {
+            color: #34495e;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            line-height: 1.8;
+            padding: 0 20px;
+        }
+
+        .buy-button {
+            background: linear-gradient(45deg, #0070ba, #1546a0);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .buy-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #0083d6, #1857c9);
+        }
+
+        .features {
+            text-align: right;
+            background: rgba(40, 167, 69, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .features h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features li {
+            margin: 10px 0;
+            color: #34495e;
+            font-size: 1.1em;
+        }
+
+        .book-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .info-item {
+            background: #f8f9fa;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 0.9em;
+        }
+
+        .info-item span {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .pricing-section {
+            margin: 30px 0;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #777;
+            font-size: 1.2em;
+        }
+
+        .current-price {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .discount-badge {
+            background: #dc3545;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .book-details {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1>كتابي الإلكتروني: دليلك نحو النجاح</h1>
+            <p>غيّر حياتك مع معارف قيمة</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="ebook-card">
+            <img src="c:\Users\dell\Pictures\White and Brown Modern Money to Life Book Cover.jpg" alt="غلاف الكتاب" class="ebook-cover">
+            <h2>من البداية إلى الثروة</h2>
+            
+            <div class="book-details">
+                <p class="description">
+                    دليلك الشامل للنجاح المالي عبر الإنترنت. يقدم هذا الكتاب استراتيجيات عملية ومجربة لبناء دخل مستقل من خلال العمل عبر الإنترنت.
+                </p>
+                
+                <div class="features">
+                    <h3>ماذا ستتعلم في هذا الكتاب؟</h3>
+                    <ul>
+                        <li>✓ كيفية بدء عملك الخاص عبر الإنترنت من الصفر</li>
+                        <li>✓ استراتيجيات التسويق الرقمي الفعالة</li>
+                        <li>✓ كيفية بناء مصادر دخل متعددة</li>
+                        <li>✓ نصائح لتجنب الأخطاء الشائعة</li>
+                        <li>✓ خطة عمل واضحة للبدء فوراً</li>
+                    </ul>
+                </div>
+
+                <div class="book-info">
+                    <div class="info-item">
+                        <span>عدد الصفحات:</span> 150 صفحة
+                    </div>
+                    <div class="info-item">
+                        <span>صيغة الكتاب:</span> PDF عالي الجودة
+                    </div>
+                    <div class="info-item">
+                        <span>يشمل:</span> تحديثات مجانية
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-section">
+                <div class="original-price">السعر الأصلي: $29.99</div>
+                <div class="current-price">
+                    <p class="price">$9.99</p>
+                    <span class="discount-badge">خصم 67%</span>
+                </div>
+            </div>
+            
+            <div class="paypal-button-container">
+                <a href="https://www.paypal.me/momolabid/9.99?redirect=success.html" target="_blank">
+                    <button class="buy-button">اشتري الكتاب الآن</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

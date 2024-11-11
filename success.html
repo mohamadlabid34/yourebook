@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تم الشراء بنجاح</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .success-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 90%;
+            animation: slideUp 0.5s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        p {
+            color: #34495e;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .download-button {
+            background: linear-gradient(45deg, #28a745, #218838);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .download-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #2fd151, #28a745);
+        }
+
+        .success-icon {
+            font-size: 50px;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-card">
+        <div class="success-icon">✓</div>
+        <h1>شكراً لك! تم الشراء بنجاح</h1>
+        <p>يمكنك الآن تحميل الكتاب الإلكتروني</p>
+        <a href="c:\Users\dell\Downloads\من البداية إلى الثروة  (1).docx" download class="download-button">تحميل الكتاب</a>
+    </div>
+</body>
+</html>
